@@ -14,5 +14,14 @@ for device in dc_inventory:
 #
 #
 for device, quantity in dc_inventory.items():
-    print("You have {}{}in the SW data center.".format(device, quantity))
-
+    print("You have {} {} in the SW data center.".format(quantity, device))
+#
+from time import sleep
+while True:
+     try:
+         print("Polling.")
+         # Poll some resource
+         sleep(1)
+     except KeyboardInterrupt:
+         break
+        
