@@ -1,0 +1,4 @@
+import math
+import random
+pi = math.pi
+print("Pi is a {} with a value of {}".format(type(pi), pi))
